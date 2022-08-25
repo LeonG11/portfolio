@@ -58,6 +58,18 @@ h1 {
   line-height: 0.8;
 }
 
+@keyframes blink {
+  0% {
+    text-shadow: 0 0 10px #8338ec;
+  }
+  50% {
+    text-shadow: 0 0 20px red;
+  }
+  100% {
+    text-shadow: 0 0 10px #8338ec;
+  }
+}
+
 .works {
   background: #96c9dc;
   &__name {
@@ -73,12 +85,16 @@ h1 {
     width: 30%;
   }
   &__middle {
-    width: 30%;
+    width: 40%;
   }
   &__right {
-    width: 50%;
-    img{
-      margin-top: 40vh;
+    width: 40%;
+    img {
+      border-radius: 0.5rem;
+      margin: 2rem -20% 2rem -20%;
+      height: 60vh;
+      margin-bottom: 2rem;
+      animation: blink 1s infinite;
     }
   }
   &__left,
@@ -91,28 +107,58 @@ h1 {
     color: white;
     background: #252422;
   }
-  &__smile{
+  &__smile {
     margin-top: 40vh;
     display: flex;
     justify-content: center;
     font-size: 49px;
     margin-bottom: 5vh;
+    text-shadow: 0 0 10px rgba(131, 56, 236, 0.4);
   }
-  &__title{
+  &__title {
     font-weight: 700;
     margin-bottom: 0.6rem;
   }
-  &__text{
+  &__text {
     font-size: 1rem;
   }
-  button{
-    padding: .35rem;
-    border-radius: .5rem;
+  button {
+    padding: 0.35rem;
+    border-radius: 0.5rem;
     width: 20%;
-    border:none;
     margin-top: 2rem;
-    &:last-child{
+    border:none;
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+    &:last-child {
       margin-left: 2%;
     }
+  }
+  &__behance {
+    color: white;
+    background: linear-gradient(to right, #03045e, #023e8a);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      filter: invert(100%);
+    }
+  }
+  &__github {
+    color: white;
+    background: linear-gradient(to right, #421533, #312178);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      filter: invert(100%);
+    }
+
+  }
+
+  &__button__flex{
+    display: flex;
+    flex-direction: row;
   }
 }

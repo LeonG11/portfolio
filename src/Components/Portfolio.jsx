@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Portfolio() {
+
+
   return (
     <div className="portfolio">
       <div className="portfolio-nav">
