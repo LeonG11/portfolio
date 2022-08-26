@@ -1,10 +1,7 @@
-import React, {useEffect} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Portfolio() {
-
-
   return (
     <div className="portfolio">
       <div className="portfolio-nav">
@@ -23,9 +20,6 @@ export default function Portfolio() {
         </h1>
         <div className="portfolio-down">
           <FontAwesomeIcon className="portfolio-arrow" icon={faArrowDown} />
-          <div className="portfolio-describe">
-            Developer from Urals , live in Saint-Peterburg and make cool stuff
-          </div>
           <h1>
             kirill <br /> kachanov
           </h1>
