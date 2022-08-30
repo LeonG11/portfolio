@@ -1,11 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { Animated } from "react-animated-css";
-import { useState } from "react";
 
 export default function Portfolio() {
-  const [isClick, setIsClick] = useState(true);
-
   return (
     <div className="portfolio">
       <div className="portfolio-nav">
@@ -24,9 +20,6 @@ export default function Portfolio() {
         </h1>
         <div className="portfolio-down">
           <FontAwesomeIcon className="portfolio-arrow" icon={faArrowDown} />
-          <h1 className="animate__animated animate__fadeInUp">
-            kirill <br /> kachanov
-          </h1>
         </div>
       </div>
     </div>

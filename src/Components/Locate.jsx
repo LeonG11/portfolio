@@ -1,18 +1,13 @@
+import {Canvas} from "@react-three/fiber";
 import React from "react";
+import Box from "../3D/Box";
 
 export default function Locate() {
-  return (
-    <div className="locate">
-      <div className="locate__header"></div>
-      <div className="locate__text"></div>
-      <div className="locate__flex">
-        <div className="locate__left">
-          <div className="locate__description"></div>
-        </div>
-        <div className="locate__right">
-          <img src="" alt="" />
-        </div>
-      </div>
-    </div>
-  );
+  return <div className="locate">
+    <Canvas>
+      <ambientLight/>
+      <pointLight position={[10,10,10]}/>
+      <Box/>
+    </Canvas>
+    </div>;
 }
